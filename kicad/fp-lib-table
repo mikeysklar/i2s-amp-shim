@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "i2s-amp-shim") (type "KiCad") (uri "${KIPRJMOD}/footprints/i2s-amp-shim.pretty") (options "") (descr "Shim connectors derived from sdio-shim"))
+)

@@ -1,0 +1,13 @@
+# KiCad backups & autosave
+kicad/*-backups/
+*-bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+_autosave-*
+fp-info-cache
+
+# OS junk
+.DS_Store
+drc.json
+erc.rpt
+*.lck
