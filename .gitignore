@@ -11,3 +11,11 @@ fp-info-cache
 drc.json
 erc.rpt
 *.lck
+
+# KiCad plot outputs and local history
+*.gbr
+*.gbrjob
+*.drl
+kicad/i2s-amp-shim-*.dxf
+kicad/.history/
+__pycache__/

@@ -1,0 +1,36 @@
+(footprint "Render_Feather_RP2350_on_J1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Render only, no copper: Adafruit Feather RP2350 (#6000) with male headers, plugged into J1.")
+	(tags "render-only 3D")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Value" "Render_Feather_RP2350_on_J1"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(model "${KIPRJMOD}/3dmodels/Adafruit.3dshapes/Adafruit_Feather_RP2350_6000.step"
+		(offset (xyz -7.1400 16.5100 0.0000))
+		(scale (xyz 1 1 1))
+		(rotate (xyz -90.0 0.0 90.0))
+	)
+	(model "${KIPRJMOD}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x16_P2.54mm_Vertical.step"
+		(offset (xyz -7.1400 10.1600 1.2700))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0.0 -90.0 0.0))
+	)
+	(model "${KIPRJMOD}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step"
+		(offset (xyz -7.1400 -0.0000 21.6535))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0.0 -90.0 0.0))
+	)
+)

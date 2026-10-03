@@ -1,0 +1,31 @@
+(footprint "Render_MAX98357_on_J2"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Render only, no copper: Adafruit MAX98357 I2S amp (#3006) with male header, plugged into J2.")
+	(tags "render-only 3D")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Value" "Render_MAX98357_on_J2"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(model "${KIPRJMOD}/3dmodels/Adafruit.3dshapes/Adafruit_MAX98357_3006.step"
+		(offset (xyz 7.1400 -8.8900 -1.2700))
+		(scale (xyz 1 1 1))
+		(rotate (xyz -90.0 0.0 -90.0))
+	)
+	(model "${KIPRJMOD}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step"
+		(offset (xyz 7.1400 -7.6200 1.2700))
+		(scale (xyz 1 1 1))
+		(rotate (xyz -180.0 -90.0 0.0))
+	)
+)

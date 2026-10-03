@@ -187,6 +187,22 @@ def main():
     j2 = place("Amp_RtAngle_Socket_SMD_1x07", "J2", "MAX98357 #3006",
                X_J2, row(4), "J2")
 
+    # Render-only: the Feather and the amp plugged into J1 and J2. No pads,
+    # board-only, out of the BOM and position files; they exist so the 3D
+    # viewer shows the finished assembly. Same origins as their sockets,
+    # which is the frame gen_render_fps.py built their transforms in.
+    for name, ref, x, y in (("Render_Feather_RP2350_on_J1", "VIS1", X_J1, row(6)),
+                            ("Render_MAX98357_on_J2", "VIS2", X_J2, row(4))):
+        fp = pcbnew.FootprintLoad(LOCAL_LIB, name)
+        if fp is None:
+            fail(f"could not load {name} from {LOCAL_LIB}; run gen_render_fps.py")
+        fp.SetFPID(pcbnew.LIB_ID("i2s-amp-shim", name))
+        fp.SetReference(ref)
+        fp.SetPosition(pcbnew.VECTOR2I(MM(x), MM(y)))
+        fp.Reference().SetVisible(False)
+        fp.Value().SetVisible(False)
+        board.Add(fp)
+
     # J1 = Feather 3V, GND, A0, A1, A2
     j1_nets = {"1": net_3v3, "2": net_gnd, "3": net_bclk, "4": net_lrc, "5": net_din}
     for pad in j1.Pads():

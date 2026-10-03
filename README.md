@@ -1,4 +1,4 @@
-![KiCad render](pics/pcb-3d.png)
+![KiCad render with a Feather RP2350 and the amp plugged in](pics/pcb-3d-assembly.png)
 
 # i2s-amp-shim
 
@@ -36,6 +36,7 @@ i2s = audiobusio.I2SOut(bit_clock=board.A0, word_select=board.A1, data=board.A2)
 - **GND** is a routed trace. The rest of the board is unconnected copper fill with a 0.5 mm gap around every trace and pad, so the laser has less to remove. The fill stays 0.5 mm back from the outline.
 - **Front silk:** a label sits past each end of each socket's pin row, where the soldered socket doesn't cover it: 3V and A2 on the Feather side, VIN and LRC on the amp side.
 - **Back silk** (burned with the laser): the board name, an A0/A1/A2 → BCLK/LRC/DIN table, and the date.
+- **3D view:** the sockets use flat-SMT models made by `kicad/make_3d.py` (FreeCAD) from KiCad's right-angle socket. A Feather RP2350 and the #3006 amp are shown plugged in, using Adafruit's models from [Adafruit_CAD_Parts](https://github.com/adafruit/Adafruit_CAD_Parts). They're board-only, render-only footprints (VIS1, VIS2) with no copper, kept out of the schematic and BOM, and written by `kicad/gen_render_fps.py`.
 - **Etch art:** `kicad/etch/etch-FCu-MIRRORED-1to1.pdf` (print at 100%) and `etch-FCu-reference.pdf`.
 
 ## Layout
@@ -48,4 +49,4 @@ i2s = audiobusio.I2SOut(bit_clock=board.A0, word_select=board.A1, data=board.A2)
 
 [MIT](LICENSE)
 
-The 3D models in `kicad/3dmodels/` are stock KiCad library models under CC-BY-SA 4.0.
+The KiCad-derived 3D models in `kicad/3dmodels/` are CC-BY-SA 4.0. The Adafruit board models are MIT, from Adafruit_CAD_Parts.
