@@ -46,4 +46,6 @@ i2s = audiobusio.I2SOut(bit_clock=board.A0, word_select=board.A1, data=board.A2)
 
 ## License
 
-[GPLv3](LICENSE)
+[MIT](LICENSE)
+
+The 3D models in `kicad/3dmodels/` are stock KiCad library models under CC-BY-SA 4.0.
