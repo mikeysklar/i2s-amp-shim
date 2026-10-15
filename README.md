@@ -1,4 +1,4 @@
-![KiCad render with a Feather RP2350 and the amp plugged in](pics/pcb-3d-assembly.png)
+![The shim with a Feather and the amp plugged in, each net lighting up in turn, then the stack coming apart](pics/i2s-amp-shim-hero.gif)
 
 # i2s-amp-shim
 
@@ -40,6 +40,8 @@ i2s = audiobusio.I2SOut(bit_clock=board.A0, word_select=board.A1, data=board.A2)
 - **Etch art:** `kicad/etch/etch-FCu-MIRRORED-1to1.pdf` (print at 100%) and `etch-FCu-reference.pdf`.
 
 ## Layout
+
+![KiCad render with a Feather RP2350 and the amp plugged in](pics/pcb-3d-assembly.png)
 
 ![PCB layout](pics/pcb-kicad-brd.png)
 
