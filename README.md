@@ -8,7 +8,7 @@ A direct-connect shim PCB that mates the Adafruit I2S 3W Class D amp breakout (M
 
 A passive shim with no components: two right-angle SMD sockets and five traces. The Feather plugs into one edge. The amp plugs into the other edge, standing vertical with its parts facing away from the Feather. Both sockets overhang the board (75% on the Feather side, 61% on the amp side), which keeps the shim to 17.5 × 24.9 mm.
 
-Single copper layer, made for a home build: the outline is milled and the copper is ablated with a fiber laser. Design files are in [`kicad/`](kicad/). The board comes entirely from `kicad/build_pcb.py`.
+Single copper layer, made for a home build: the outline is milled and the copper is ablated with a fiber laser, then coated in solder mask with the pads opened. Design files are in [`kicad/`](kicad/). The board comes entirely from `kicad/build_pcb.py`.
 
 ## Pinout
 

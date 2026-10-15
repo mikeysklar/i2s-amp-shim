@@ -72,7 +72,7 @@ EDGE_FROM_BODY = BODY_LEN * (1 - OVERHANG)
 # asked for as thick as possible; nothing on this board forces a neck.
 TRACE_WIDTH = 1.0
 # Gap between parallel traces and from trace to unrelated pad. Generous on
-# purpose: laser-ablated, no mask.
+# purpose: laser-ablated copper, with solder mask added afterwards.
 GAP = 0.6
 LANE = TRACE_WIDTH + GAP
 
