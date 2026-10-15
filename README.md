@@ -39,6 +39,20 @@ i2s = audiobusio.I2SOut(bit_clock=board.A0, word_select=board.A1, data=board.A2)
 - **3D view:** the sockets use flat-SMT models made by `kicad/make_3d.py` (FreeCAD) from KiCad's right-angle socket. A Feather RP2350 and the #3006 amp are shown plugged in, using Adafruit's models from [Adafruit_CAD_Parts](https://github.com/adafruit/Adafruit_CAD_Parts). They're board-only, render-only footprints (VIS1, VIS2) with no copper, kept out of the schematic and BOM, and written by `kicad/gen_render_fps.py`.
 - **Etch art:** `kicad/etch/etch-FCu-MIRRORED-1to1.pdf` (print at 100%) and `etch-FCu-reference.pdf`.
 
+## Photos
+
+### Laser-ablated copper
+
+![Two shims after the fiber laser, bare copper with the isolation cuts](pics/photo-laser-copper.jpeg)
+
+### Solder mask with the pads opened
+
+![Two shims in green solder mask, pads exposed, Feather 3V, VIN, LRC and A2 labels](pics/photo-solder-mask.jpeg)
+
+### Assembled, next to its paste stencil
+
+![Shim soldered between a Feather and the MAX98357 amp, wired to a speaker, beside the I2S AMP SHIM stencil](pics/photo-assembled.jpeg)
+
 ## Layout
 
 ![KiCad render with a Feather RP2350 and the amp plugged in](pics/pcb-3d-assembly.png)
